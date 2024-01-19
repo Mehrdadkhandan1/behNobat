@@ -24,6 +24,19 @@ export const HeaderC = styled.header`
         color: ${({ theme }) => theme.primaryColor};
 
     }
+    .menu{
+        display: none;
+    }
+    @media screen and (max-width: 550px) {
+        & .signup{
+            display: none;
+        }
+        & .menu{
+            display: inherit;
+            color: ${({ theme }) => theme.tertiaryColor};
+            font-size: 1.5rem;
+        }
+    } 
 
 
 

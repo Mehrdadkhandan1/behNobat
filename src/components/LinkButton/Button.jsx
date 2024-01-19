@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { ThemeContext } from '../../context/ThemeContex'
 
-const Button = ({ children }) => {
+const LinkButton = ({ children }) => {
     const theme = useContext(ThemeContext)
     return (
         <ButtonC theme={theme}>
@@ -11,7 +11,7 @@ const Button = ({ children }) => {
     )
 }
 
-export default Button
+export default LinkButton
 
 const ButtonC = styled.button`
     color: #fff;
@@ -26,5 +26,10 @@ const ButtonC = styled.button`
     align-items: center;
     gap: 0.25rem;
     justify-content: space-evenly;
-   
+    transition: all ease-in-out 0.4s;
+    @media screen  and (max-width: 960px) {
+        & {
+        font-size: var(--small-font);
+        }
+    }
 `

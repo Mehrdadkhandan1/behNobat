@@ -9,6 +9,7 @@ export const MainC = styled.main`
     transition: all ease-in-out 0.4s;
         display: grid;
         position: relative;
+        place-items: center;
         grid-template-columns:  40% 50%;
         gap: 1rem;
         justify-content: space-between;
@@ -107,5 +108,40 @@ export const MainC = styled.main`
         } 
 
     }
+    @media screen and (max-width: 768px) {
+        &{
+            width: 100%;
+        }
+        & .heading{
+        grid-template-columns:  1fr;
+        gap: 4rem;
+
+        }
+        & .heading .picture{
+            width: 250px;
+            height: 250px;  
+        }
+        & .heading .picture::before{
+            width: 180px;
+            height: 130px;
+            right: -2rem;
+            top: -2rem;
+        } 
+        & .heading .picture::after{
+            border-radius: 0.5rem;
+            content: '';
+            width: 180px;
+            height: 130px;
+            background-color:${({ theme }) => theme.secondaryColor};
+            opacity: 0.5;
+            position: absolute;
+            z-index: -6;
+            left: -2rem;
+            bottom: -2rem;
+        } 
+
+    }
+
+
 
 `
