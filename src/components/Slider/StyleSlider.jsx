@@ -7,7 +7,14 @@ export const SliderC = styled.section`
     width: 100%;
     height: 100%;
   }
-  
+  h2{
+    display: inline-block;
+    padding: 0.5rem 0;
+    font-weight: bold;
+    color: ${({theme})=>theme.secondaryColor};
+    font-size: var(--title-font);
+    border-bottom: 2px solid;
+  }
   .swiper-slide {
     text-align: center;
     font-size: 18px;

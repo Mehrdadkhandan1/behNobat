@@ -12,6 +12,7 @@
 }
 /* reset browser styles */
 * {
+    letter-spacing: 1.2px;
     direction: rtl;
     font-family: vazir;
     box-sizing: border-box;
