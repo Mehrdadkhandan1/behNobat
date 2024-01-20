@@ -2,10 +2,10 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { ThemeContext } from '../../context/ThemeContex'
 
-const LinkButton = ({ children }) => {
+const LinkButton = ({ children, secend }) => {
     const theme = useContext(ThemeContext)
     return (
-        <ButtonC theme={theme}>
+        <ButtonC secend={secend} theme={theme}>
             {children}
         </ButtonC>
     )
@@ -14,9 +14,9 @@ const LinkButton = ({ children }) => {
 export default LinkButton
 
 const ButtonC = styled.button`
-    color: #fff;
+    color: ${({ theme,secend }) => secend ? theme.primaryColor :'#fff' };
     min-width: 128px;
-    background-color: ${({ theme }) => theme.primaryColor};
+    background-color: ${({ theme,secend }) => secend ? 'inherit':theme.primaryColor  };
     padding: 0.5rem 0.75rem;
     font-size: var(--text-font);
     border-radius: 0.5rem;

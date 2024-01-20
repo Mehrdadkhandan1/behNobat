@@ -38,4 +38,12 @@ export const SliderC = styled.section`
     height: 350px;
     margin: 20px auto;
   }
+
+  @media screen and (max-width: 500px){
+    h2{
+        font-size: var(--text-font);
+    }
+  
+}
+
 `

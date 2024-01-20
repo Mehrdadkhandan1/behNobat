@@ -7,7 +7,7 @@ export const ExperienceC = styled.div`
     align-items: center;
     padding: 1rem;
     margin: 0.25rem;
-    box-shadow: 0 0 4px 3px #5252526c;
+    box-shadow: 0 0 8px 2px #5252526c;
     border-radius: 0.5rem;
     gap: 1rem;
     .picture-experience{

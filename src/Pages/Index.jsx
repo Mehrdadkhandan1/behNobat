@@ -9,6 +9,7 @@ import { ThemeContext } from '../context/ThemeContex'
 import Button from '../components/button/Button'
 import { LuCalendarClock } from "react-icons/lu";
 import Slider from '../components/Slider/Slider'
+import About from '../components/about/About'
 const Index = () => {
   // use Colors
   const theme = useContext(ThemeContext)
@@ -41,6 +42,7 @@ const Index = () => {
         </div>
       </section>
       <Slider />
+      <About />
 
     </MainC>
   )
