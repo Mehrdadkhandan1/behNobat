@@ -3,6 +3,7 @@ import { SendMessageC } from './StyleSendMessage'
 import Input from '../Input/Input'
 import { useThemeContext } from '../../hooks/useContexts'
 import TextArea from '../textArea/TextArea'
+import Button from '../button/Button'
 const formInputs = [
   { name: 'fullName', type: 'text', example: 'مهرداد خندان', label: 'نام و نام خانوادگی' },
   { name: 'phoneNumber', type: 'number', example: '....0930', label: 'شماره تماس' },
@@ -39,6 +40,11 @@ const SendMessage = () => {
         </div>
         <div className="write-message">
           <TextArea value={dataMessage.message} change={changeValueMessage} label='پیغام شما' name='message' example='پیغام خود را وارد کنید...' />
+          <div>
+            <Button>
+              ارسال پیام
+            </Button>
+          </div>
         </div>
       </form>
     </SendMessageC >

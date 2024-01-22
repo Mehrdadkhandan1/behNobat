@@ -20,6 +20,11 @@ h2{
             gap: 1rem;
         }
     }
+    .write-message{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
     @media screen and (max-width: 768px) {
             & .send-message{
                 gap: 1rem;
