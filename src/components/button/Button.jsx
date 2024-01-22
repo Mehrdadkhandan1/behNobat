@@ -7,7 +7,7 @@ const Button = ({ children }) => {
 
     return (
         <ButtonC theme={theme}>
-            {children}
+            {children} 
         </ButtonC>
     )
 }

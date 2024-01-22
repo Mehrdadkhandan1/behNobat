@@ -1,10 +1,10 @@
 .behNobat {
-    margin: 1rem !important;
+    margin: 1rem 1rem 0!important;
 }
 
  body {
     max-width: 1440px;
-    margin: 1rem auto !important ;
+    margin: 1rem auto 0 !important ;
 }
 
 

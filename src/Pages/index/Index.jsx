@@ -10,6 +10,7 @@ import Slider from '../../components/Slider/Slider'
 import About from '../../components/about/About'
 import { useBusinessContext, useThemeContext } from '../../hooks/useContexts'
 import SendMessage from '../../components/sendMessage/SendMessage';
+import Footer from '../../components/footer/Footer';
 const Index = () => {
   // use Colors
   const theme = useThemeContext()
@@ -46,6 +47,7 @@ const Index = () => {
       <Slider />
       <About />
       <SendMessage />
+      <Footer/>
 
     </MainC>
   )

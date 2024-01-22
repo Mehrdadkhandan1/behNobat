@@ -31,7 +31,7 @@ const TextAreaC = styled.div`
             & {
                 gap: 1rem;
             textarea{
-                min-height: 150px;
+                height: 150px;
             }
                 
             }

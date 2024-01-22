@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const MainC = styled.main`
-    width: 80%;
-    margin:  4rem auto;
+    margin:  4rem auto 0;
     transition: all ease-in-out 0.4s;
     .heading{
         /* heading style  */

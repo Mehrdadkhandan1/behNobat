@@ -14,7 +14,7 @@ export const AboutC = styled.section`
         width: 100%;
         grid-template-areas:'textAbout pictureAbout';
         margin-top: 3rem;
-        gap: 1rem;
+        gap: 2rem;
     }
     .text-about{
         grid-area: textAbout;
@@ -31,7 +31,7 @@ export const AboutC = styled.section`
     
     grid-area: pictureAbout;
     position: relative;
-            width: 400px;
+            width: 550px;
             height: 400px;
             max-height:400px;
         img{
