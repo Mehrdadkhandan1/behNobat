@@ -1,11 +1,17 @@
 .behNobat {
-    margin: 1rem 1rem 0!important;
+    margin: 1rem 1rem 0 !important;
 }
 
- body {
+html,
+body,
+#root,
+.behNobat {
+position: relative;
+height: 100%;
+}
+
+body {
+    height: 100%;
     max-width: 1440px;
-    margin: 1rem auto 0 !important ;
+    margin: 1rem auto 0 !important;
 }
-
-
-

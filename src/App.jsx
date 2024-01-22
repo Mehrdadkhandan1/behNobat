@@ -5,6 +5,7 @@ import './App.css'
 import Index from './Pages/index/Index'
 import api from './services/config'
 import BusinessContextProvider from './context/BusinessContext'
+import Signin from './Pages/Signin/Signin'
 const App = () => {
   // theme Web
   const [theme, setTheme] = useState({})
@@ -21,13 +22,14 @@ const App = () => {
     }
     fetchData()
   }, [])
-   return (
+  return (
     <BusinessContextProvider value={defualtValue}>
       {/* context theme */}
       <ThemeContextProvider theme={theme}>
         <div className='behNobat'>
           <Header />
-          <Index />
+          {/* <Index /> */}
+          <Signin />
         </div>
       </ThemeContextProvider>
     </BusinessContextProvider>
