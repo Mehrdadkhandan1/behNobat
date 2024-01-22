@@ -1,21 +1,24 @@
-import React, { useContext } from 'react'
+import React  from 'react'
 // style component
 import { HeaderC } from './StyleHeader'
 // theme
-import { ThemeContext } from '../../context/ThemeContex'
 // logo website
 import logo from './../../media/doctoreto-logo.webp'
 
 import { RiMenu2Line } from "react-icons/ri";
 
 import Button from '../button/Button'
+import { useBusinessContext, useThemeContext } from '../../hooks/useContexts';
 const Header = () => {
     // use Theme
-    const theme = useContext(ThemeContext)
+    const theme =useThemeContext()
+    const business =useBusinessContext()
+    
+
     return (
         <HeaderC theme={theme}>
             <div className='logo'>
-                <img src={logo} alt="logo" />
+                <img src={business.logo} alt="logo" />
             </div>
             <div className='signup'>
                 <Button>

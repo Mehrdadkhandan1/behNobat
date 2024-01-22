@@ -1,11 +1,12 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { AboutC } from './StyleAbout'
 import img from './../../media/clinic.jpg'
 import LinkButton from '../LinkButton/Button'
 import { IoCall } from "react-icons/io5";
-import { ThemeContext } from '../../context/ThemeContex';
+import { useThemeContext } from '../../hooks/useContexts';
 const About = ({showMore}) => {
-    const theme = useContext(ThemeContext)
+    const theme =useThemeContext()
+
     return (
         <AboutC theme={theme}>
             <h2>

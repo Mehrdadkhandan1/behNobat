@@ -1,18 +1,20 @@
-import React, { useContext } from 'react'
+import React from 'react'
 // styled component 
-import { MainC } from './index/Style'
+import { MainC } from './Style'
 // logo
-import doc from './../media/doc.png'
+import doc from './../../media/doc.png'
 
-import { ThemeContext } from '../context/ThemeContex'
-
-import Button from '../components/button/Button'
+import Button from '../../components/button/Button'
 import { LuCalendarClock } from "react-icons/lu";
-import Slider from '../components/Slider/Slider'
-import About from '../components/about/About'
+import Slider from '../../components/Slider/Slider'
+import About from '../../components/about/About'
+import { useBusinessContext, useThemeContext } from '../../hooks/useContexts'
+import SendMessage from '../../components/sendMessage/SendMessage';
 const Index = () => {
   // use Colors
-  const theme = useContext(ThemeContext)
+  const theme = useThemeContext()
+  const business = useBusinessContext()
+  console.log(business)
   return (
     <MainC theme={theme}>
       {/* haeding */}
@@ -43,6 +45,7 @@ const Index = () => {
       </section>
       <Slider />
       <About />
+      <SendMessage />
 
     </MainC>
   )

@@ -53,27 +53,6 @@ export const AboutC = styled.section`
         height: calc(100% + 1.25rem);;
 }
 /* responsive */
-@media screen and (max-width: 768px){
-    
-    place-items: center;
-    & .about{
-        margin-top: 4rem;
-        gap: 2rem;
-        place-items: center;
-        grid-template-areas:'pictureAbout'
-                            'textAbout';
-    }
-    .picture-about{
-        width: 400px;
-        height: 300px;
-    }
-    .text-about{
-        width: 90%;
-        P{
-        white-space: break-spaces;
-    
-    }}
-}
 @media screen and (max-width: 960px){
     
     place-items: center;
@@ -90,6 +69,34 @@ export const AboutC = styled.section`
     
     }}
 }
+@media screen and (max-width: 768px){
+    
+    place-items: center;
+    & .about{
+        margin-top: 4rem;
+        gap: 2rem;
+        place-items: center;
+        grid-template-areas:'pictureAbout'
+                            'textAbout';
+    }
+    .picture-about{
+        width: 80%;
+        height: 300px;
+    }
+    .picture-about img{
+        width: 100%;
+    }
+    .picture-about::before{
+        display: none;
+    }
+    .text-about{
+        width: 90%;
+        P{
+        white-space: break-spaces;
+    
+    }}
+}
+
 @media screen and (max-width: 500px){
     h2{
         font-size: var(--text-font);
@@ -103,9 +110,7 @@ export const AboutC = styled.section`
         width: 80%;
         height: 250px;
     }
-    .picture-about::before{
-        display: none;
-    }
+   
     .text-about{
         P{
         font-weight: bold;

@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
+import React  from 'react'
 import styled from 'styled-components'
-import { ThemeContext } from '../../context/ThemeContex'
+import { useThemeContext } from '../../hooks/useContexts'
 
 const LinkButton = ({ children, secend }) => {
-    const theme = useContext(ThemeContext)
+    const theme =useThemeContext()
+
     return (
         <ButtonC secend={secend} theme={theme}>
             {children}

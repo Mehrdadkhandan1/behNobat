@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, {  useEffect,  useState } from 'react';
 import { Virtual, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { SliderC } from './StyleSlider';
 import Experience from '../experience/Experience';
-import { ThemeContext } from '../../context/ThemeContex';
+import { useThemeContext } from '../../hooks/useContexts';
 
 export default function Slider() {
   const [swiperRef, setSwiperRef] = useState(null);
@@ -34,7 +34,8 @@ export default function Slider() {
   }
   
   window.addEventListener('resize',changeNumberSlides)
-  const theme = useContext(ThemeContext)
+  const theme =useThemeContext()
+
   return (
     <SliderC theme = {theme}>
       <h2>تخصص های ما</h2>

@@ -1,11 +1,14 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { ExperienceC } from './StyleExperience'
 import LinkButton from '../LinkButton/Button'
 import { LuUser2 } from "react-icons/lu";
 import mind from './../../media/mind.jpg'
-import { ThemeContext } from '../../context/ThemeContex';
+import { useThemeContext } from '../../hooks/useContexts';
+
 const Experience = () => {
-    const theme = useContext(ThemeContext)    
+    const theme =useThemeContext()
+
+ 
     return (
         <ExperienceC theme={theme}>
             <div className='picture-experience'>
