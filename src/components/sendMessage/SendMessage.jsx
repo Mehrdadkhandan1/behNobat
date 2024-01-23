@@ -20,7 +20,13 @@ const SendMessage = () => {
   const theme = useThemeContext()
 
   const changeValueMessage = (e) => {
-
+    const name = e.target.name
+    setDataMessage(prevState => {
+      return {
+        ...prevState,
+        [name]:e.target.value
+      }
+    })
   }
 
   return (
@@ -35,7 +41,8 @@ const SendMessage = () => {
               name={input.name}
               type={input.type}
               example={input.example}
-              label={input.label} />
+              label={input.label}
+              change={changeValueMessage} />
           })}
         </div>
         <div className="write-message">

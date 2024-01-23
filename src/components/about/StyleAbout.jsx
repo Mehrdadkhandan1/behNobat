@@ -15,6 +15,7 @@ export const AboutC = styled.section`
         grid-template-areas:'textAbout pictureAbout';
         margin-top: 3rem;
         gap: 2rem;
+        justify-content: space-between;
     }
     .text-about{
         grid-area: textAbout;

@@ -32,10 +32,10 @@ const Index = () => {
             به کلینیک ما خوش آمدید
           </p>
           <h1>
-            وب سایت نوبت دهی کلینیک ایکس
+            وب سایت نوبت دهی کلینیک {business.businessName}
           </h1>
           <p className='introduction-text'>
-            مرکز تخصصی پوست و مو با افراد مجرب
+           {business.slogan}
           </p>
           <div className='reservation'>
             <Button>

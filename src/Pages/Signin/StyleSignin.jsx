@@ -5,6 +5,7 @@ transition: all ease-in-out 0.4s;
     width: 100%;
     height: 100%;
     display: flex;
+    margin-top: 1rem;
     align-items: center;
     .signin-page::before{
 transition: all ease-in-out 0.4s;
@@ -97,6 +98,10 @@ transition: all ease-in-out 0.4s;
             }
         }
         @media screen and (max-width:768px) {
+            &{
+            margin-top: 2rem;
+
+            }
            .signin-page{
             width: 75%;
            }

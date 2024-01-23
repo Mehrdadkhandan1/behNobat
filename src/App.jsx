@@ -16,20 +16,22 @@ const App = () => {
     const fetchData = async () => {
       // defualt Data 
       const result = (await api.get('/business')).data
-      setDefualtValue(result)
+      setDefualtValue(result.data)
       // Set theme 
-      setTheme(result.colorPalette)
+      setTheme(result.data.colorPalette)
     }
     fetchData()
   }, [])
+
   return (
+    Object.keys(defualtValue).length &&
     <BusinessContextProvider value={defualtValue}>
       {/* context theme */}
       <ThemeContextProvider theme={theme}>
         <div className='behNobat'>
           <Header />
           {/* <Index /> */}
-          <Signin />
+          <Signin / >
         </div>
       </ThemeContextProvider>
     </BusinessContextProvider>

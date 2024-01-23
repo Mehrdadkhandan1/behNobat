@@ -13,7 +13,6 @@ const Header = () => {
     // use Theme
     const theme =useThemeContext()
     const business =useBusinessContext()
-    
 
     return (
         <HeaderC theme={theme}>
