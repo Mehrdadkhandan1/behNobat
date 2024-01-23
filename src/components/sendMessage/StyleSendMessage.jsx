@@ -13,7 +13,8 @@ h2{
     .send-message{
         margin-top: 3rem;
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 4fr 7fr ;
+        gap: 2rem;
         .inputs-message{
             display: flex;
             flex-direction: column;
@@ -27,6 +28,15 @@ h2{
     }
     @media screen and (max-width: 768px) {
             & .send-message{
+                width: 50%;
+                gap: 1rem;
+                grid-template-columns: 1fr;
+                
+            }
+        }
+    @media screen and (max-width: 500px) {
+            & .send-message{
+                width: 80%;
                 gap: 1rem;
                 grid-template-columns: 1fr;
                 
