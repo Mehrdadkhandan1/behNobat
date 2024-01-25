@@ -5,7 +5,7 @@ import { LuUser2 } from "react-icons/lu";
 import mind from './../../media/mind.jpg'
 import { useThemeContext } from '../../hooks/useContexts';
 
-const Experience = () => {
+const Expertise = () => {
     const theme =useThemeContext()
 
  
@@ -23,4 +23,4 @@ const Experience = () => {
     )
 }
 
-export default Experience
+export default Expertise

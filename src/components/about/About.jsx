@@ -21,7 +21,7 @@ const About = ({ showMore }) => {
                         <LinkButton>
                             تماس با ما <span><IoCall /></span>
                         </LinkButton>
-                        <LinkButton secend>
+                        <LinkButton secend={true}>
                             اطلاعات بیشتر
                         </LinkButton>
                     </div>

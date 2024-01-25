@@ -36,9 +36,10 @@ const SendMessage = () => {
       </h2>
       <form className='send-message'>
         <div className="inputs-message">
-          {formInputs.map(input => {
+          {formInputs.map((input,index) => {
             return <Input value={dataMessage[input.name]}
               name={input.name}
+              key={index}
               type={input.type}
               example={input.example}
               label={input.label}

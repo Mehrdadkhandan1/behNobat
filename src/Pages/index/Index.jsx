@@ -47,7 +47,6 @@ const Index = () => {
       <Slider />
       <About />
       <SendMessage />
-      <Footer/>
 
     </MainC>
   )

@@ -6,6 +6,9 @@ import Index from './Pages/index/Index'
 import api from './services/config'
 import BusinessContextProvider from './context/BusinessContext'
 import Signin from './Pages/Signin/Signin'
+import ExpertisePage from './Pages/ExpertisePage/ExpertisePage'
+import Footer from './components/footer/Footer'
+import ExpertsPage from './Pages/ExpertsPage/ExpertsPage'
 const App = () => {
   // theme Web
   const [theme, setTheme] = useState({})
@@ -31,7 +34,11 @@ const App = () => {
         <div className='behNobat'>
           <Header />
           {/* <Index /> */}
-          <Signin / >
+          {/* <Signin / > */}
+          {/* <ExpertisePage /> */}
+          <ExpertsPage />
+          <Footer />
+
         </div>
       </ThemeContextProvider>
     </BusinessContextProvider>

@@ -115,16 +115,24 @@ transition: all ease-in-out 0.4s;
             }
         }
         @media screen and (max-width:500px) {
+            .go-back{
+                font-size:var(--text-font) ;
+            }
             .signin-page{
                 width: 90%;
             }
+     
             .signin-page::before , .signin-page::after{
                 width: 150px;
                 height: 150px;
             }
-
+          
             .show-pages-signin{
                 width: 100%;
+                
+            }
+            .change-page p  {
+                font-size: var(--text-font);
             }
         }
 
