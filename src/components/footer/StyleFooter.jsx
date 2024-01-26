@@ -51,6 +51,7 @@ export const FooterC = styled.footer`
         padding: 1rem;
         gap: 0.5rem;
         font-size: var(--text-font);
+        text-align: center;
         color: ${({ theme }) => theme.tertiaryColor};
     }
 @media screen and (max-width: 960px) {

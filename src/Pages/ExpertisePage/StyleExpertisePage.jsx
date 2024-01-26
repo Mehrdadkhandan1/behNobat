@@ -1,13 +1,19 @@
 import styled from "styled-components";
 
 export const ExpertisePageC = styled.main`
+        transition: all ease-in-out 0.4s;
+
     margin-top: 3rem;
     nav{
+
+        transition: all ease-in-out 0.4s;
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
     .select-expertise{
+
+        transition: all ease-in-out 0.4s;
         display: flex;
         align-items: center;
         font-size: var(--sub-title-font);
@@ -18,6 +24,8 @@ export const ExpertisePageC = styled.main`
         color: ${({ theme }) => theme.primaryColor} ;
         
         img{
+
+            transition: all ease-in-out 0.4s;
             width: 32px;
         }
     }
@@ -34,17 +42,24 @@ export const ExpertisePageC = styled.main`
     @media screen and (max-width: 768px){
         nav{
             flex-direction: column-reverse;
-            width: 90%;
+            width: 70%;
             gap: 1rem;
         }
         .select-expertise{
             font-size: var(--text-font);
-        }   
+                gap: 0.5rem;
+                padding: 0.5rem;
+        
+                img{
+                    width: 24px;
+                }    }
+
+        
          .expertises{
             justify-content: center;
         }
     }
-    @media screen and (max-width:500px) {
+    @media screen and (max-width:550px) {
         nav{
         align-items:center;
         width: 100%;

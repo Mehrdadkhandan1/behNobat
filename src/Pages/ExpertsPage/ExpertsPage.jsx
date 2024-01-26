@@ -3,6 +3,7 @@ import { ExpertsC } from './StyleExpertsPage'
 import star from './../../media/start.svg'
 import SearchBox from '../../components/SearchBox/SearchBox'
 import { useThemeContext } from '../../hooks/useContexts'
+import Expert from '../../components/expert/Expert'
 
 const ExpertsPage = () => {
     const theme = useThemeContext()
@@ -15,8 +16,11 @@ const ExpertsPage = () => {
                 </h3>
                 <SearchBox />
             </nav>
-            <div className="show-expert">
-                
+            <div className="show-experts">
+            <Expert />
+            <Expert />
+            <Expert />
+            <Expert />
             </div>
 
     </ExpertsC>

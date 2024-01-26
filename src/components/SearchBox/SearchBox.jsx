@@ -41,4 +41,18 @@ export const SearchBoxC = styled.div`
       font-size: var(--text-font);
 
     }
+    @media screen and (max-width:768px) {
+      &{
+        min-width: 200px;
+        height: 45px;
+        padding:  0.25rem;
+
+        font-size: var(--text-font);
+        input::placeholder{
+
+        font-size: var(--small-font);
+
+}
+      }
+    }
 `

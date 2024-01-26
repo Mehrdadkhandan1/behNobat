@@ -15,7 +15,7 @@ const LinkButton = ({ children, secend }) => {
 export default LinkButton
 
 const ButtonC = styled.button`
-    color: ${({ theme,secend }) => secend ? theme.primaryColor :'#fff' };
+    color: ${({ theme,secend }) => secend ? theme.tertiaryColor :'#fff' };
     min-width: 128px;
     background-color: ${({ theme,secend }) => secend ? 'inherit':theme.primaryColor  };
     padding: 0.5rem 0.75rem;
