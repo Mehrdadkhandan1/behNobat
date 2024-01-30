@@ -3,7 +3,6 @@ import { ExpertC } from './StyleExpert'
 import { useThemeContext } from '../../hooks/useContexts'
 import star from "../../media/start.svg"
 import doc2 from "../../media/doc2.jpg"
-import Button from '../button/Button'
 import LinkButton from '../LinkButton/Button'
 
 const Expert = () => {

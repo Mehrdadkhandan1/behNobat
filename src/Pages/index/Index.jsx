@@ -46,6 +46,8 @@ const Index = () => {
       </section>
       <Slider />
       <About />
+      <About reverse={true} />
+      <About  />
       <SendMessage />
 
     </MainC>

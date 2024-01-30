@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutC = styled.section`
-    
+    margin-top: 3rem;
     h2{
         color: ${({ theme }) => theme.secondaryColor};
         padding: 0.5rem 0;
@@ -10,12 +10,15 @@ export const AboutC = styled.section`
         font-size: var(--title-font);
     }
     .about{
+        
         display: grid;
         width: 100%;
-        grid-template-areas:'textAbout pictureAbout';
+        /* reverse */
+        grid-template-areas:${({ reverse }) => reverse ? "'pictureAbout textAbout'" : "'textAbout pictureAbout'"};
         margin-top: 3rem;
         gap: 2rem;
-        justify-content: space-between;
+        justify-content: ${({ reverse }) => !reverse && 'space-between'};
+        
     }
     .text-about{
         grid-area: textAbout;

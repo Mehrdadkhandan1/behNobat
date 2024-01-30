@@ -1,15 +1,14 @@
 import React from 'react'
 import { AboutC } from './StyleAbout'
-import img from './../../media/clinic.jpg'
 import LinkButton from '../LinkButton/Button'
 import { IoCall } from "react-icons/io5";
 import { useBusinessContext, useThemeContext } from '../../hooks/useContexts';
-const About = ({ showMore }) => {
+const About = ({ showMore, reverse }) => {
     const theme = useThemeContext()
     const { about } = useBusinessContext()
-  
+
     return (
-        <AboutC theme={theme}>
+        <AboutC reverse={reverse} theme={theme}>
             <h2>
                 درباره ما
             </h2>

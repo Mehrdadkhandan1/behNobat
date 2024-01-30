@@ -9,6 +9,7 @@ import Signin from './Pages/Signin/Signin'
 import ExpertisePage from './Pages/ExpertisePage/ExpertisePage'
 import Footer from './components/footer/Footer'
 import ExpertsPage from './Pages/ExpertsPage/ExpertsPage'
+import GetTurn from './Pages/GetTurn/GetTurn'
 const App = () => {
   // theme Web
   const [theme, setTheme] = useState({})
@@ -36,7 +37,8 @@ const App = () => {
           {/* <Index /> */}
           {/* <Signin / > */}
           {/* <ExpertisePage /> */}
-          <ExpertsPage />
+          {/* <ExpertsPage /> */}
+          <GetTurn/>
           <Footer />
 
         </div>
