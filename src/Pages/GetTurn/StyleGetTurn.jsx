@@ -44,6 +44,7 @@ export const GetTurnC = styled.main`
         }
        
     }
+    /* reservition  */
     .reservation{
         margin-top: var(--mg-top);
         h3{
@@ -52,15 +53,43 @@ export const GetTurnC = styled.main`
         }    
         .reservation-section{
             margin:var(--mg-top) auto ;
-            width: 80%;
-            padding:  0 var(--pad-sections);
-            grid-template-columns: 1fr 4fr;
+            padding-right: var(--pad-sections);
+            grid-template-columns: 230px 1fr;
         }
+        /* navbar reservation */
         .nav-reservition{
+            width: 230px;
+            h4{
+            color: ${({ theme }) => theme.secondaryColor};
+            font-size: var(--sub-title-font);
+
+
+            }
             padding:   var(--pad-sections) 0;
 
             border-left: 1px solid ${({ theme }) => theme.tertiaryColor};
+            .stages ul{
+            padding:  2rem 1rem;
+            gap: 2rem;
+            flex-direction: column;
+            list-style-type: decimal;
+            
+            li a{
+                color: ${({ theme }) => theme.tertiaryColor};
+            }
+            li::marker{
+                color: ${({ theme }) => theme.tertiaryColor};
+                
+            }
+
         }
-        
+        }
+        .show-outlet{
+            padding: var(--pad-sections);
+        }
+
+   
+
     }
+
 `

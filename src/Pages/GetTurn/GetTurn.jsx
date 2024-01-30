@@ -4,6 +4,7 @@ import doc from './../../media/doc2.jpg'
 import star from './../../media/start.svg'
 import './../../var-class-default.css'
 import { useThemeContext } from '../../hooks/useContexts'
+import Step1R from '../../components/step1R/Step1R'
 const GetTurn = () => {
     const theme = useThemeContext()
     return (
@@ -67,10 +68,10 @@ const GetTurn = () => {
                 <div className="reservation-section box-shadow border-r d-grid">
                     <nav className="nav-reservition">
                         <h4>
-                            مراحل نوبت گیری
+                            مراحل نوبت گیری :
                         </h4>
                         <div className="stages">
-                            <ul>
+                            <ul className='d-flex'>
                                 <li>
                                     <a href="#">
                                         انتخاب سرویس :
@@ -100,7 +101,7 @@ const GetTurn = () => {
                         </div>
                     </nav>
                     <div className='show-outlet'>
-
+                        <Step1R />
                     </div>
                 </div>
             </div>
