@@ -42,3 +42,11 @@ img {
 a{
     text-decoration: none;
 }
+button{
+    outline: 0;
+    border: 0;
+}
+.transition{
+    transition: all ease-in-out 0.4s;
+
+}

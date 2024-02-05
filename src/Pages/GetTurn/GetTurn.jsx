@@ -2,20 +2,23 @@ import React from 'react'
 import { GetTurnC } from './StyleGetTurn'
 import doc from './../../media/doc2.jpg'
 import star from './../../media/start.svg'
-import './../../var-class-default.css'
 import { useThemeContext } from '../../hooks/useContexts'
 import Step1R from '../../components/step1R/Step1R'
+import PaginationStepButtons from '../../components/paginationStepButtons/paginationStepButtons'
+import Step3R from '../../components/Step3R/Step3R'
+import Step4R from '../../components/Step4R/Step4R'
+import MobileNavR from '../../components/mobileNavR/MobileNavR'
 const GetTurn = () => {
     const theme = useThemeContext()
     return (
         <GetTurnC theme={theme}>
-            <div className="informition-doc d-flex jspace-between">
+            <div className="informition-doc transition   d-flex jspace-between">
                 {/* photo , name and more... */}
-                <div className="info-doc-section d-flex">
-                    <div className="img-section">
+                <div className="info-doc-section transition d-flex">
+                    <div className="img-section transition">
                         <img className='box-shadow' src={doc} alt="دکتر" />
                     </div>
-                    <div className="info-doc d-flex jspace-evenly">
+                    <div className="info-doc transition d-flex jspace-evenly">
                         <h4>
                             <span>نوبت گیری از</span>
                             :
@@ -39,8 +42,8 @@ const GetTurn = () => {
 
 
                 {/* score doctor */}
-                <div className="score-doc-section">
-                    <div className='scocre-doc  d-flex align-c'>
+                <div className="score-doc-section transition">
+                    <div className='scocre-doc transition d-flex align-c'>
                         <span>
                             امتیاز
                         </span>
@@ -65,6 +68,7 @@ const GetTurn = () => {
                 <h3>
                     نوبت گیری از متخصص
                 </h3>
+
                 <div className="reservation-section box-shadow border-r d-grid">
                     <nav className="nav-reservition">
                         <h4>
@@ -100,10 +104,15 @@ const GetTurn = () => {
                             </ul>
                         </div>
                     </nav>
-                    <div className='show-outlet'>
+                    <MobileNavR />
+                    <div className='show-outlet d-flex jspace-between'>
                         <Step1R />
+                        {/* <Step3R /> */}
+                        {/* <Step4R /> */}
+                        <PaginationStepButtons />
                     </div>
                 </div>
+
             </div>
         </GetTurnC>
     )

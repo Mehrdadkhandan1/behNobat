@@ -6,7 +6,7 @@ const LinkButton = ({ children, secend }) => {
     const theme =useThemeContext()
 
     return (
-        <ButtonC secend={secend} theme={theme}>
+        <ButtonC className='d-flex align-c jspace-evenly border-r transition' secend={secend} theme={theme}>
             {children}
         </ButtonC>
     )
@@ -15,19 +15,14 @@ const LinkButton = ({ children, secend }) => {
 export default LinkButton
 
 const ButtonC = styled.button`
+    
     color: ${({ theme,secend }) => secend ? theme.tertiaryColor :'#fff' };
+    cursor: pointer;
     min-width: 128px;
     background-color: ${({ theme,secend }) => secend ? 'inherit':theme.primaryColor  };
     padding: 0.5rem 0.75rem;
     font-size: var(--text-font);
-    border-radius: 0.5rem;
-    border: 0;
-    outline: 0;
-    display: flex;
-    align-items: center;
     gap: 0.25rem;
-    justify-content: space-evenly;
-    transition: all ease-in-out 0.4s;
     @media screen  and (max-width: 960px) {
         & {
         font-size: var(--small-font);

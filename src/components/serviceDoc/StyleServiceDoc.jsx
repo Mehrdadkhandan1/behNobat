@@ -12,20 +12,42 @@ export const ServiceDocC = styled.div`
         height: 100%;
     
         .name-service{
-            color: ${({theme})=>theme.secondaryColor};
+            color: ${({ theme }) => theme.secondaryColor};
             font-weight: bold;
-            gap: 0.5rem;
+            gap: 0.25rem;
         }
         .time-service{
             gap: 0.25rem;
             font-size: var(--small-font);
-            color: ${({theme})=>theme.tertiaryColor};
+            color: ${({ theme }) => theme.tertiaryColor};
         }
     }
     .price{
         gap: 0.25rem;
-        color: ${({theme})=>theme.primaryColor};
+        color: ${({ theme }) => theme.primaryColor};
         font-size: var(--text-font);
+    }
+
+    @media screen and (max-width:960px) {
+        &{
+        padding: 0.75rem ;
+        font-size: var(--small-font);
+        .img-section{
+        width: 60px;}
+
+    }
+
+    }
+
+    @media screen and (max-width:768px) {
+        &{
+        padding: 0.5rem ;
+        font-size: 10px;
+        .img-section{
+        width: 40px;}
+
+    }
+
     }
 
 `
