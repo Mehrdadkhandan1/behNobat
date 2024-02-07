@@ -36,7 +36,7 @@ const ServiceDoc = () => {
                     </p>
                 </div>
             </div>
-            <p className="price d-flex">
+            <p className="price transition d-flex">
                 <span>قیمت </span>
                 :
                 <span>

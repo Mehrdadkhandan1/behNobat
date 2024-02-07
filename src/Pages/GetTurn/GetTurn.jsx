@@ -106,9 +106,9 @@ const GetTurn = () => {
                     </nav>
                     <MobileNavR />
                     <div className='show-outlet d-flex jspace-between'>
-                        <Step1R />
+                        {/* <Step1R /> */}
                         {/* <Step3R /> */}
-                        {/* <Step4R /> */}
+                        <Step4R />
                         <PaginationStepButtons />
                     </div>
                 </div>

@@ -14,4 +14,10 @@ export const Step3RC = styled.section`
         gap :2rem ;
         
     }
+    @media screen and (max-width:550px) {
+        .form-user-info{
+        grid-template-columns: 1fr;
+        margin: 2rem auto;
+        }
+    }
 `

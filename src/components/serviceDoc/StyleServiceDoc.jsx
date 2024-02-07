@@ -25,7 +25,7 @@ export const ServiceDocC = styled.div`
     .price{
         gap: 0.25rem;
         color: ${({ theme }) => theme.primaryColor};
-        font-size: var(--text-font);
+        font-size: var(--text-font) ;
     }
 
     @media screen and (max-width:960px) {
@@ -47,7 +47,24 @@ export const ServiceDocC = styled.div`
         width: 40px;}
 
     }
+    }
+    @media screen and (max-width:550px){
+            &{
+                margin-top: 2rem;
+                padding: 0.5rem;
+            }
+            .info-section{
+                gap: 0.5rem;
+            }
+            .price{
+        font-size: var(--small-font);
+    }
+        }
 
+    @media screen and (max-width:350px) {
+        .price span:last-child{
+            display: none;
+        }   
     }
 
 `

@@ -104,7 +104,7 @@ export const GetTurnC = styled.main`
         }
     
         .show-outlet{
-            padding: var(--pad-sections);
+            padding: 1rem;
             min-height: 600px;
             flex-direction: column;
         }
@@ -165,7 +165,10 @@ export const GetTurnC = styled.main`
                 font-size: var(--sub-title-font);
             }
         }
-
+    .show-outlet{
+        padding: 0.5rem !important;
+        min-height: 400px !important;
+    }
     }
 
 `

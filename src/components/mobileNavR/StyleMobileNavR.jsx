@@ -31,10 +31,30 @@ grid-template-columns: 0.5fr 1fr ;
 
     }
     @media screen and (max-width: 768px) {
+
             &{
-                font-size: var(--small-font);
                 display: inherit;
             }
+            & ul{
+                font-size: var(--small-font);
+
+            }
     }
+
+
+    @media screen and (max-width:550px) {
+        &{
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 1rem 0.5rem;
+            ul{
+                justify-content: center;
+                gap: 1rem;
+            }
+
+        }    
+        
+    }
+
     
 `
