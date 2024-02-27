@@ -5,7 +5,7 @@ const TextArea = ({ label, name, value, change, example }) => {
     return (
         <TextAreaC>
             <label htmlFor={name}> {label}: </label>
-            <textarea name={name} id={name} onChange={change} value={value} placeholder={example} ></textarea>
+            <textarea  name={name} id={name} onChange={change} value={value} placeholder={example} ></textarea>
         </TextAreaC>
     )
 }
@@ -16,8 +16,10 @@ export default TextArea
 const TextAreaC = styled.div`
         height: 100%;
         display: grid;
-        grid-template-rows: 14% 86%;
+        grid-template-rows: 24px auto;
+        gap: 0.5rem;
     textarea{
+        resize: none;
         box-shadow: 0px 0px 6px 1px rgba(81, 81, 81, 0.25);
         border-radius: 0.5rem;
         padding: 0.5rem;
@@ -31,7 +33,7 @@ const TextAreaC = styled.div`
             & {
                 gap: 1rem;
             textarea{
-                height: 150px;
+                height: 110px;
             }
                 
             }

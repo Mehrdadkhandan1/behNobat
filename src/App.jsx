@@ -10,6 +10,7 @@ import ExpertisePage from './Pages/ExpertisePage/ExpertisePage'
 import Footer from './components/footer/Footer'
 import ExpertsPage from './Pages/ExpertsPage/ExpertsPage'
 import GetTurn from './Pages/GetTurn/GetTurn'
+import AdminPanel from './Pages/AdminPanel/AdminPanel'
 const App = () => {
   // theme Web
   const [theme, setTheme] = useState({})
@@ -33,14 +34,14 @@ const App = () => {
       {/* context theme */}
       <ThemeContextProvider theme={theme}>
         <div className='behNobat'>
-          <Header />
+          {/* <Header /> */}
           {/* <Index /> */}
           {/* <Signin / > */}
           {/* <ExpertisePage /> */}
           {/* <ExpertsPage /> */}
-          <GetTurn/>
-          <Footer />
-
+          {/* <GetTurn/> */}
+          {/* <Footer /> */}
+          <AdminPanel />
         </div>
       </ThemeContextProvider>
     </BusinessContextProvider>

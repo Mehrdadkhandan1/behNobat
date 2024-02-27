@@ -8,6 +8,7 @@ import PaginationStepButtons from '../../components/paginationStepButtons/pagina
 import Step3R from '../../components/Step3R/Step3R'
 import Step4R from '../../components/Step4R/Step4R'
 import MobileNavR from '../../components/mobileNavR/MobileNavR'
+import Step2R from '../../components/step2R/Step2R'
 const GetTurn = () => {
     const theme = useThemeContext()
     return (
@@ -107,8 +108,9 @@ const GetTurn = () => {
                     <MobileNavR />
                     <div className='show-outlet d-flex jspace-between'>
                         {/* <Step1R /> */}
+                        <Step2R />
                         {/* <Step3R /> */}
-                        <Step4R />
+                        {/* <Step4R /> */}
                         <PaginationStepButtons />
                     </div>
                 </div>

@@ -22,6 +22,8 @@ const InputC = styled.div`
     flex-direction: column;
     gap: 0.75rem;
     width:100% ;
+    min-width: 200px;
+    max-width: 250px;
         label{
             transition: all ease-in-out 0.4s;
             color:${({ theme }) => theme.tertiaryColor} ;
@@ -36,7 +38,7 @@ const InputC = styled.div`
             height: 100%;
             display: flex;
             align-items: center;
-            padding: 0.75rem 0.5rem;
+            padding: 0.5rem;
             direction: rtl;
         }
         input::placeholder{
